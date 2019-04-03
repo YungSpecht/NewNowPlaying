@@ -19,7 +19,13 @@
 - (bool)isShowsFormatEnabledForPlayerState:(id)arg1 {
     return TRUE;
 } 
+%end
 
+%hook SPTNowPlayingContainerIdleMonitor
+- (void)setCountdownEnabled:(bool)arg1 {
+    arg1 = 0;
+    %orig;
+} 
 %end
 
 %hook SPTAdFeatureFlagChecks
