@@ -1,7 +1,7 @@
 %hook SPTNowPlayingTestManagerImplementation
 
 - (bool)isNewNowPlayingViewEnabled {
-    return YES;
+    return NO;
 } 
 - (bool)isNewNowPlayingViewEnabledIPad {
     return YES;
@@ -19,6 +19,12 @@
 - (bool)isShowsFormatEnabledForPlayerState:(id)arg1 {
     return YES;
 } 
+%end
+
+%hook SPTNowPlayingTestManagerImplementation
+-(bool) isShowsFormatEnabledForPlayerState:(id)arg1 {
+return YES;
+}
 %end
 
 %hook SPTNowPlayingContainerIdleMonitor
@@ -45,7 +51,6 @@
     return YES;
 } 
 %end
-
 
 
 
