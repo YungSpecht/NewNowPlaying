@@ -1,6 +1,6 @@
-export ARCHS = armv7 arm64
+export ARCHS = armv7 arm64 arm64e
 
-include $(THEOS)/makefiles/common.mk
+include $(THEOS)/makefiles/common.m
 
 TWEAK_NAME = NewNowPlaying
 NewNowPlaying_FILES = Tweak.xm
