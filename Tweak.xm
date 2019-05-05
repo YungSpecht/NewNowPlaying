@@ -1,48 +1,48 @@
 %hook SPTNowPlayingTestManagerImplementation
 
 - (bool)isNewNowPlayingViewEnabled {
-    return FALSE;
+    return YES;
 } 
 - (bool)isNewNowPlayingViewEnabledIPad {
-    return TRUE;
+    return YES;
 } 
 - (bool)isNewNowPlayingViewEnabledOnFree {
-    return TRUE;
+    return YES;
 } 
 -(bool)isNewNowPlayingViewEnabledOnPremium {
-    return TRUE;
+    return YES;
 } 
 
 - (bool)isNewNowPlayingViewConsolidatedFlagEnabled {
-    return TRUE;
+    return YES;
 } 
 - (bool)isShowsFormatEnabledForPlayerState:(id)arg1 {
-    return TRUE;
+    return YES;
 } 
 %end
 
 %hook SPTNowPlayingContainerIdleMonitor
 - (void)setCountdownEnabled:(bool)arg1 {
-    arg1 = 0;
+    arg1 = NO;
     %orig;
 } 
 %end
 
 %hook SPTAdFeatureFlagChecks
 - (bool)isNewNowPlayingViewEnabled {
-    return TRUE;
+    return YES;
 } 
 %end
 
 %hook SPTCollectionPlatformTestManagerImplementation
 - (bool)isNewNowPlayingViewEnabled {
-    return TRUE;
+    return YES;
 } 
 %end
 
 %hook SPTNowPlayingCoverArtViewCell
 - (bool)isShowsFormatAppearance {
-    return TRUE;
+    return YES;
 } 
 %end
 
