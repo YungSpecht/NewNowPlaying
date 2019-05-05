@@ -1,7 +1,7 @@
 Package: com.rango.newnowplaying
 Name: NewNowPlaying
 Depends: mobilesubstrate
-Version: 1.2
+Version: 1.2.1
 Architecture: iphoneos-arm
 Description: Enables a new and modern looking Now Playing UI in the Spotify Application.
 Maintainer: Rango
