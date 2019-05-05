@@ -21,12 +21,6 @@
 } 
 %end
 
-%hook SPTNowPlayingTestManagerImplementation
--(bool) isShowsFormatEnabledForPlayerState:(id)arg1 {
-return YES;
-}
-%end
-
 %hook SPTNowPlayingContainerIdleMonitor
 - (void)setCountdownEnabled:(bool)arg1 {
     arg1 = NO;
