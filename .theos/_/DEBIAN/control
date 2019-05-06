@@ -6,5 +6,5 @@ Description: Enables a new and modern looking Now Playing UI in the Spotify Appl
 Maintainer: Rango
 Author: Yung Specht
 Section: Tweaks
-Version: 1.1
-Installed-Size: 132
+Version: 1.2.1-1+debug
+Installed-Size: 156
